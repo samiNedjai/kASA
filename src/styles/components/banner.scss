@@ -1,0 +1,47 @@
+.kasa-banner {
+    position: relative;
+    margin: 40px auto;
+    max-width: 1240px;
+    width: 100%;
+    height: 223px;
+    z-index: 7;
+    overflow: hidden;
+    
+  
+    img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 25px;
+      
+    }
+  
+    .overlay {
+      position: absolute;
+       height: 100%;
+       width: 100%;
+      mix-blend-mode: darken;
+      opacity: 0.3;
+      z-index: 3;
+      background:black;
+      border-radius: 25px;
+    }
+    .banner-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      z-index: 4;
+      p {
+        color: #ffffff;
+        font-size: 48px;
+        font-weight: 500;
+      }
+    }
+  }
