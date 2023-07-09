@@ -5,6 +5,7 @@ export default function Banner() {
     const home = "./homebanner.jpg";
     const about = "./aboutbanner.jpg";
     const location = useLocation();
+    console.log(location)
   return (
     <div className="kasa-banner">
       <img
