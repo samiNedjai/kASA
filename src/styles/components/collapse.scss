@@ -5,7 +5,7 @@
     max-width: 1024px;
     width: auto;
     height: 47px;
-    background-color: #ff6060;
+    background-color:$color-secondary;
     border-radius: 5px;
     }
     .accordion_header {
@@ -20,18 +20,18 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-            color: #ffffff;
-            font-weight: 500;
-            font-size: 24px;
+        color:$color-primary;
+        font-weight: 500;
+        font-size: 24px;
         }
-        .arrow{
-            transition: all 0.2s ease-in-out;
+    .arrow{
+        transition: all 0.2s ease-in-out;
         }
-        .arrow_up{
+    .arrow_up{
             transform: rotate(0deg);
         }
-        .arrow_down{
-            transform: rotate(180deg);
+    .arrow_down{
+        transform: rotate(180deg);
         }
       }
     }
@@ -44,7 +44,7 @@
     padding: 35px 18px 0 18px;
     margin: auto;
     background-color: #f7f7f7;
-    color: #ff6060;
+    color:$color-secondary;
     font-size: 18px;
     font-weight: 400;
     border-radius: 5px;

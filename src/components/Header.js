@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import logo from "../assets/logo.svg"
 
-export default function Header() {
+ function Header() {
   return (
     <header className="kasa-header">
       <img src={logo} alt="Logo Kasa" />
@@ -10,3 +10,4 @@ export default function Header() {
     </header>
   )
 }
+export default Header;

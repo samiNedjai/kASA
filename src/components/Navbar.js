@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-export default function Navbar() {
+ function Navbar() {
   return (
     <nav className='kasa-nav'>
         <ul>
@@ -26,3 +26,4 @@ export default function Navbar() {
     </nav>
   )
 }
+export default Navbar;

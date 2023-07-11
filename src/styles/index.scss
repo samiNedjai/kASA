@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import "./base/reset.scss";
+@import "./base/variables";
 @import "./layouts/header.scss";
 @import "./layouts/footer.scss";
 @import "./pages/error.scss";
+@import "./pages/home.scss";
 @import "./components/banner.scss";
-@import "./components/collapse.scss"
+@import "./components/collapse.scss";
+@import "./components/card.scss"

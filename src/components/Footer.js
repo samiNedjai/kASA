@@ -1,7 +1,7 @@
 import React from 'react'
 import logoFooter from "../assets/logowhite.svg"
 
-export default function Footer() {
+ function Footer() {
   return (
     <footer className="footer">
       <img className="footer-img" src={logoFooter} alt="logo Kasa" />
@@ -9,3 +9,4 @@ export default function Footer() {
     </footer>
   )
 }
+export default Footer;

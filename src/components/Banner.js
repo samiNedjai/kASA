@@ -1,11 +1,11 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
 
-export default function Banner() {
+ function Banner() {
     const home = "./homebanner.jpg";
     const about = "./aboutbanner.jpg";
     const location = useLocation();
-    console.log(location)
+    // console.log(location)
   return (
     <div className="kasa-banner">
       <img
@@ -21,3 +21,4 @@ export default function Banner() {
     </div>
   )
 }
+export default Banner;

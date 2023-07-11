@@ -1,14 +1,29 @@
 import React from 'react'
 import Banner from '../components/Banner';
+import datas from '../data/data.json'
+import Card from '../components/Card';
 
 
 
 
-export default function Home() {
+ function Home() {
   document.title = "kasa-Accuiel";
   return (
     <div>
     <Banner/>
+    <main className='gallery'>
+            {datas.map(data => {
+                return (
+                    <Card
+                        key={data.id}
+                        id={data.id}
+                        title={data.title}
+                        cover={data.cover}
+                    />
+                )
+            })}
+        </main>
     </div>
   )
 }
+export default Home;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Error() {
+ function Error() {
     document.title = "kasa-Erreur 404";
     return (
         <div className="error">
@@ -17,3 +17,4 @@ export default function Error() {
     </div>
     );
 }
+export default Error;

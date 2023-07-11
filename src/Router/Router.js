@@ -7,7 +7,7 @@ import Logement from '../pages/Logement'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-export default function Router() {
+ function Router() {
   return (
     <BrowserRouter>
     <Header/>
@@ -22,3 +22,4 @@ export default function Router() {
    
   )
 }
+export default Router;
