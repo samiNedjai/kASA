@@ -28,7 +28,6 @@
         object-fit: cover;
         object-position: center;
         transition: transform 0.2s ease-in-out;
-        // will-change: transform;
     }
     h3{
         z-index: 20;
@@ -37,8 +36,7 @@
         left: 20px;
         right: 20px;
         font-weight: 500;
-        font-size: clamp(12px, 3vw, 18px);
+        font-size:  18px;
         color:$color-primary;
     }
-
 }
