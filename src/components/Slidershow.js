@@ -15,10 +15,14 @@ import ArrowLeft from '../assets/chevron_carousel_left.png'
   const goToNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
+  const showArrows = images.length > 1; // Vérifie si vous avez plus d'une image
+  const showCounter = images.length > 1; // Vérifie si vous avez plus d'une image
 
   return (
     <div className="slider" >
         <img className="slider" src={images[currentIndex]} alt={`Vue de la chambre ${currentIndex + 1}`} />
+        {showArrows && (
+        <>
       <img 
         className='slider_arrow slider_arrow_left'
         src={ArrowLeft} 
@@ -32,7 +36,9 @@ import ArrowLeft from '../assets/chevron_carousel_left.png'
       alt="show next slider" 
        onClick={goToNext}
        />
-        <p className='slideCount'>{currentIndex + 1} / {images.length}</p>
+        </>
+      )}
+       {showCounter && <p className='slideCount'>{currentIndex + 1} / {images.length}</p>}
     </div>
   );
 }

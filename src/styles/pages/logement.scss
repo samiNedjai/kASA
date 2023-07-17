@@ -2,4 +2,26 @@
     max-width: 1240px;
     width: 100%;
     margin: 0 auto;
+    .logement {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 25px auto;
+        .logement_header {
+          display: flex;
+          flex-direction: column;
+    
+          .logement_title {
+            font-size: 36px;
+            color: #ff6060;
+            font-weight: 500;
+          }
+          .logement_location {
+            font-size: 18px;
+            color: #ff6060;
+            font-weight: 500;
+          }
+        }
+      }
 }
