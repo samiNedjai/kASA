@@ -8,3 +8,25 @@
     width: 95%;
     margin: 0 auto;
 }
+@media screen and (max-width: 1230px) {
+    .gallery {
+    gap: 25px;
+    padding:25px 15px; 
+    background-color: #fff
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .gallery {
+    gap: 25px;
+    padding:25px 15px; 
+    background-color: #fff
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .gallery {
+      width: 100%;
+      background-color: #fff
+      }
+    }
+  

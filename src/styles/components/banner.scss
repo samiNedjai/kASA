@@ -45,20 +45,20 @@
       }
     }
   }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 480px) {
     .kasa-banner {
-      margin: 20px 20px 0px 20px;
       max-width: 425px;
-      width: auto;
-      height: 111px;
+      width: 90%;
+      height: 120px;
       border-radius: 10px;
       .overlay,
       img {
         border-radius: 10px;
+        
       }
       .banner-text {
         display: block;
-        padding: 25px 16px;
+        padding: 42px 33px;
   
         p {
           font-size: 24px;
@@ -67,6 +67,33 @@
             content: "";
             clear: both;
           }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1230px) {
+    .kasa-banner {
+    width: 95%;
+    }
+  }
+  @media (min-width: 481px) and (max-width: 1024px) {
+    .kasa-banner {
+     
+      margin: 20px 20px 43px 10px;
+      margin-left: 20px;
+      margin-right: 50px;
+      width: 95%;
+      height: 120px;
+      border-radius: 10px;
+      .overlay,
+      img {
+        border-radius: 10px;
+        
+      }
+      .banner-text {
+        p {
+          font-size: 24px;
+        
         }
       }
     }
