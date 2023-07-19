@@ -15,9 +15,9 @@ function App() {
          <BrowserRouter>
     <Header/>
     <Routes>
-        <Route exact path= "kasa/" element= {<Home/>}/>
-        <Route exact path= "kasa/a-propos" element= {<About/>}/>
-        <Route  path= "kasa/logement/:id" element= {<Logement/>}/>
+        <Route exact path= "/" element= {<Home/>}/>
+        <Route exact path= "/a-propos" element= {<About/>}/>
+        <Route  path= "/logement/:id" element= {<Logement/>}/>
         <Route exact path= "*" element= {<Error/>}/>
     </Routes>
     <Footer/>

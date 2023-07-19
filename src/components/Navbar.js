@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom'
         <ul>
             <li>
             <NavLink
-            to={"/kasa/"}
+            to={"/"}
             className={(nav) => (nav.isActive ? "nav-active" : null)}
           >
             Accueil
@@ -15,7 +15,7 @@ import { NavLink } from 'react-router-dom'
             </li>
             <li>
           <NavLink
-            to={"/kasa/a-propos"}
+            to={"/a-propos"}
             className={(nav) => (nav.isActive ? "nav-active" : null)}
           >
             A propos
