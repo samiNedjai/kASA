@@ -1,16 +1,17 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
+import homeBanner from '../assets/homebanner.jpg';
+import aboutBanner from '../assets/aboutbanner.jpg';
+
 
 function Banner() {
-  const home = "./homebanner.jpg";
-  const about = "./aboutbanner.jpg";
   const location = useLocation();
    console.log(location)
-   console.log(home)
+   
 return (
   <div className="kasa-banner">
     <img
-      src={location.pathname === "/a-propos" ? about : home}
+      src={location.pathname === "/a-propos" ? aboutBanner : homeBanner}
       alt="banner"
     />
     <div className="overlay"></div>
