@@ -52,21 +52,23 @@ const stars = Array.from({ length: maxRating }, (_, index) => {
             </li>
           ))}
         </ul>
-        <div className="acc_stars_host">
+        <div className="log_stars_host">
           <div className="logement_stars">
           {stars.map((star, index) => (
                 <img src={star} alt={`Étoile ${index + 1}`} key={index} className="star" />
               ))}
             
           </div>
-          {/* <div className="logement_host_mobile">
+
+        
+          <div className="logement_host_mobile">
             <p>{host.name}</p>
             <img
               src={host.picture}
               alt={"photo de profil de " + host.name}
             />
-          </div> */}
-        </div>
+          </div>
+          </div>
       </div>
       <div className="logement_accordion_container">
         <Collapse

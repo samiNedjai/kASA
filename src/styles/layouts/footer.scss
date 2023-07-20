@@ -15,5 +15,32 @@
       padding: 29px 0px;
       color: #ffffff;
     }
-    
   }
+  @media screen and (min-width: 481px) and (max-width: 1024px) {
+    .footer {
+      .footer-img {
+        width: 12%;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .footer {
+      justify-content: center;
+      .footer-img {
+        width: 30%;
+        height: 40px;
+        
+      }
+      .footer-text {
+        text-align: center;
+        padding: 10px 0px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        width: 133px;
+
+      }
+    }
+  }
+  
