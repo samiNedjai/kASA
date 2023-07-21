@@ -33,3 +33,35 @@
         font-size: clamp(14px, 2vw, 18px);
     }
 }
+
+@media screen and (max-width:480px){
+    .slider{
+        height: 255px;
+        &_arrow{
+            position: absolute;
+            top: 60%;
+            height: 15%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            &:active{
+                transform: translateY(-50%) scale(0.9);
+            }
+            &_right{
+                right: 0px;
+            }
+            &_left{
+                left: 0px;
+            }
+        }
+        .slideCount{
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: $color-primary;
+            font-weight: 500;
+            font-size: clamp(14px, 2vw, 18px);
+        }
+    }
+    
+}

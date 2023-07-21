@@ -32,7 +32,7 @@ const stars = Array.from({ length: maxRating }, (_, index) => {
   return (
     <main>
     <div className="logement_container">
-      <Slider images={pictures} />
+      <Slider className="slider" images={pictures} />
       <div className="logement">
         <div className="logement_header">
           <h1 className="logement_title">{title}</h1>
