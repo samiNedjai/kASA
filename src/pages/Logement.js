@@ -9,12 +9,15 @@ import grey_star from '../assets/grey_star.png'
 
 
  function Logement() {
+  // Utilisation du hook useParams pour récupérer l'identifiant du logement depuis l'URL
   const { id } = useParams();
-  console.log(id)
+  // console.log(id)
+  // Recherche du logement correspondant dans les données chargées depuis "data.json"
   const selectedData = datas.find((data) => data.id === id) ;
   if (!selectedData) {
     return <div><Error/></div>;
   }
+   // Extraction des informations du logement depuis l'objet "selectedData"
   const pictures = selectedData.pictures;
   const title = selectedData.title;
   const location = selectedData.location;
@@ -59,8 +62,6 @@ const stars = Array.from({ length: maxRating }, (_, index) => {
               ))}
             
           </div>
-
-        
           <div className="logement_host_mobile">
             <p>{host.name}</p>
             <img
@@ -93,9 +94,6 @@ const stars = Array.from({ length: maxRating }, (_, index) => {
       </div>
     </div>
   </main>
-
-  
-
 );
 }
 export default Logement;
