@@ -11,7 +11,6 @@ import grey_star from '../assets/grey_star.png'
  function Logement() {
   // Utilisation du hook useParams pour récupérer l'identifiant du logement depuis l'URL
   const { id } = useParams();
-  // console.log(id)
   // Recherche du logement correspondant dans les données chargées depuis "data.json"
   const selectedData = datas.find((data) => data.id === id) ;
   if (!selectedData) {
@@ -47,6 +46,7 @@ const stars = Array.from({ length: maxRating }, (_, index) => {
           <img src={host.picture} alt={"photo de profil de " + host.name} />
         </div>
       </div>
+       {/* Affiche les tags et les étoiles de notation */}
       <div className="logement_tags_stars">
         <ul className="tags">
           {tags.map((tag, index) => (
@@ -71,6 +71,7 @@ const stars = Array.from({ length: maxRating }, (_, index) => {
           </div>
           </div>
       </div>
+      {/* Affiche les sections "Collapse" pour la description et les équipements */}
       <div className="logement_accordion_container">
         <Collapse
           title="Description"

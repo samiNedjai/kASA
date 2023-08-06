@@ -5,7 +5,7 @@ import ArrowLeft from '../assets/chevron_carousel_left.png'
 
 
   function Slider({ images }) {
-
+    // État local pour suivre l'index de l'image actuellement affichée
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
@@ -15,11 +15,13 @@ import ArrowLeft from '../assets/chevron_carousel_left.png'
   const goToNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
-  const showArrows = images.length > 1; // Vérifie si vous avez plus d'une image
-  const showCounter = images.length > 1; // Vérifie si vous avez plus d'une image
+  // Vérifie si vous avez plus d'une image pour afficher les flèches et le compteur
+  const showArrows = images.length > 1; 
+  const showCounter = images.length > 1; 
 
   return (
     <div className="slider" >
+       {/* Affiche l'image actuelle */}
         <img className="slider" src={images[currentIndex]} alt={`Vue de la chambre ${currentIndex + 1}`} />
         {showArrows && (
         <>

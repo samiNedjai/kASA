@@ -14,6 +14,7 @@ import Card from '../components/Card';
     <main className='gallery'>
             {datas.map(data => {
                 return (
+                    // Affiche chaque carte en utilisant le composant "Card"
                     <Card
                         key={data.id}
                         id={data.id}
