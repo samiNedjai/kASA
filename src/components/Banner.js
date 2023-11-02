@@ -6,7 +6,7 @@ import aboutBanner from '../assets/aboutbanner.jpg';
 
 function Banner() {
   const location = useLocation();
-   console.log(location)
+  //  console.log(location)
    
 return (
   <div className="kasa-banner">
