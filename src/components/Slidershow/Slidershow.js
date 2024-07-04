@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import ArrowRight from '../assets/chevron_carousel_right.png'
-import ArrowLeft from '../assets/chevron_carousel_left.png'
+import ArrowRight from '../../assets/chevron_carousel_right.png'
+import ArrowLeft from '../../assets/chevron_carousel_left.png'
 
 
   function Slider({ images }) {

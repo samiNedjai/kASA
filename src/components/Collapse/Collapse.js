@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import chevronUp from "../assets/chevron-up.png";
+import chevronUp from "../../assets/chevron-up.png";
 
 
 function Collapse({title, content}) {

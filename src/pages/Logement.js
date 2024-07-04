@@ -1,9 +1,9 @@
 import React from 'react'
 import datas from '../data/data.json'
 import { useParams } from 'react-router-dom'
-import Slider from '../components/Slidershow'
+import Slider from '../components/Slidershow/Slidershow'
 import Error from './Error'
-import Collapse from '../components/Collapse'
+import Collapse from '../components/Collapse/Collapse'
 import red_star from '../assets/red_star.png'
 import grey_star from '../assets/grey_star.png'
 

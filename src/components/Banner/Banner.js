@@ -1,7 +1,7 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
-import homeBanner from '../assets/homebanner.jpg';
-import aboutBanner from '../assets/aboutbanner.jpg';
+import homeBanner from '../../assets/homebanner.jpg';
+import aboutBanner from '../../assets/aboutbanner.jpg';
 
 
 function Banner() {
