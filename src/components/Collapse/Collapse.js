@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import React,{ useState } from 'react';
 import chevronUp from "../../assets/chevron-up.png";
 
 
@@ -17,9 +16,9 @@ function Collapse({title, content}) {
                      alt="" />
                 </div>
             </div>
-            <div>
+           
             {Active && <div className="accordion_content">{content}</div>}
-            </div>
+            
         </div>
         
             

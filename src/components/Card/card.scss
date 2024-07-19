@@ -43,7 +43,7 @@
 @media screen and (min-width: 481px) and (max-width: 1024px) {
     .card-link {
       max-width: 1024px;
-      background-color: #fff;
+      background-color: $color-primary ;
       width: 100%;
     }
   }
@@ -51,7 +51,7 @@
   @media screen and (max-width: 480px) {
     .card-link {
       width: 100%;
-      background-color: #fff;
+      background-color: $color-primary ;
       }
     }
   

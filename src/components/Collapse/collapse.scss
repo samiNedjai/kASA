@@ -43,11 +43,12 @@
     width: auto;
     padding: 35px 18px 0 18px;
     margin: auto;
-    background-color: #f7f7f7;
+    background-color: $color-tertiary;
     color:$color-secondary;
     font-size: 18px;
     font-weight: 400;
     border-radius: 5px;
+    
   }
   @media screen and (min-width: 481px) and (max-width: 1024px) {
     .accordion_container {
