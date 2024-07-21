@@ -1,18 +1,18 @@
 import React from 'react'
-import datas from '../data/data.json'
+import data from '../../data/data.json'
 import { useParams } from 'react-router-dom'
-import Slider from '../components/Slidershow/Slidershow'
-import Error from './Error'
-import Collapse from '../components/Collapse/Collapse'
-import red_star from '../assets/red_star.png'
-import grey_star from '../assets/grey_star.png'
+import Slider from '../../components/Slidershow/Slidershow'
+import Error from '../Error/Error'
+import Collapse from '../../components/Collapse/Collapse'
+import red_star from '../../assets/red_star.png'
+import grey_star from '../../assets/grey_star.png'
 
 
  function Logement() {
   // Utilisation du hook useParams pour récupérer l'identifiant du logement depuis l'URL
   const { id } = useParams();
   // Recherche du logement correspondant dans les données chargées depuis "data.json"
-  const selectedData = datas.find((data) => data.id === id) ;
+  const selectedData = data.logements.find((data) => data.id === id) ;
   if (!selectedData) {
     return <div><Error/></div>;
   }
