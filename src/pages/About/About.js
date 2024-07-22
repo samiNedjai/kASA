@@ -5,6 +5,8 @@ import Collapse from '../../components/Collapse/Collapse';
 
 function About() {
 
+	document.title = "kasa- à propos";
+
 	const accordionData = data.AproposAccordion; 
     return (
         <div>

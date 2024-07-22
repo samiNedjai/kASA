@@ -7,13 +7,15 @@ import Card from '../../components/Card/Card';
 
 
  function Home() {
-    const listings = data.logements
-  document.title = "kasa-Accuiel";
+    document.title = "kasa-Accuiel";
+
+    const logements = data.logements
+ 
   return (
     <div>
     <Banner/>
     <main className='gallery'>
-            {listings.map(data => {
+            {logements.map(data => {
                 return (
                     // Affiche chaque carte en utilisant le composant "Card"
                     <Card

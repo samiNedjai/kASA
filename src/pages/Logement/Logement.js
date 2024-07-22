@@ -9,28 +9,33 @@ import grey_star from '../../assets/grey_star.png'
 
 
  function Logement() {
+  
   // Utilisation du hook useParams pour récupérer l'identifiant du logement depuis l'URL
   const { id } = useParams();
   // Recherche du logement correspondant dans les données chargées depuis "data.json"
-  const selectedData = data.logements.find((data) => data.id === id) ;
+  const selectedData = data.logements.find((logement) => logement.id === id) ;
+
+ document.title = `${selectedData.title} - Kasa`
+
   if (!selectedData) {
     return <div><Error/></div>;
   }
+
    // Extraction des informations du logement depuis l'objet "selectedData"
-  const pictures = selectedData.pictures;
-  const title = selectedData.title;
-  const location = selectedData.location;
-  const description = selectedData.description;
-  const host = selectedData.host;
-  const rating = selectedData.rating;
-  const equipments = selectedData.equipments;
-  const tags = selectedData.tags;
- 
+
+  const { pictures, title, location, description, host, rating, equipments, tags } = selectedData;
 // Génère les étoiles en fonction de la note
-const maxRating = 5;
-const stars = Array.from({ length: maxRating }, (_, index) => {
-  return index < rating ? red_star : grey_star;
-});
+
+function renderStars(rating, maxRating = 5) {
+  return Array.from({ length: maxRating }, (_, index) => (
+    <img 
+      key={index}
+      src={index < rating ? red_star : grey_star}
+      alt={`Étoile ${index < rating ? 'pleine' : 'vide'}`}
+      className="star"
+    />
+  ));
+}
   return (
     <main>
     <div className="logement_container">
@@ -57,9 +62,8 @@ const stars = Array.from({ length: maxRating }, (_, index) => {
         </ul>
         <div className="log_stars_host">
           <div className="logement_stars">
-          {stars.map((star, index) => (
-                <img src={star} alt={`Étoile ${index + 1}`} key={index} className="star" />
-              ))}
+
+          {renderStars(rating)}
             
           </div>
           <div className="logement_host_mobile">
