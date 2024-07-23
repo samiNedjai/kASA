@@ -1,4 +1,4 @@
-import React from 'react'
+import React , { useEffect }  from 'react'
 import data from '../../data/data.json'
 import { useParams } from 'react-router-dom'
 import Slider from '../../components/Slidershow/Slidershow'
@@ -12,13 +12,17 @@ import grey_star from '../../assets/grey_star.png'
   
   // Utilisation du hook useParams pour récupérer l'identifiant du logement depuis l'URL
   const { id } = useParams();
+  
   // Recherche du logement correspondant dans les données chargées depuis "data.json"
   const selectedData = data.logements.find((logement) => logement.id === id) ;
 
- document.title = `${selectedData.title} - Kasa`
+  useEffect(() => {
+    document.title = selectedData ? `${selectedData.title} - Kasa` : 'Kasa-Erreur 404 ';
+  }, [selectedData]);
 
   if (!selectedData) {
-    return <div><Error/></div>;
+    const errorMessage = `Le logement avec l'ID ${id} n'existe pas.`;
+    return <Error message={errorMessage} />;
   }
 
    // Extraction des informations du logement depuis l'objet "selectedData"
