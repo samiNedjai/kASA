@@ -23,6 +23,7 @@ import Card from '../../components/Card/Card';
                         id={data.id}
                         title={data.title}
                         cover={data.cover}
+                        location={data.location}
                     />
                 )
             })}

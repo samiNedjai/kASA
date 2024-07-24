@@ -29,17 +29,26 @@
         object-position: center;
         transition: transform 0.2s ease-in-out;
     }
-    h3{
-        z-index: 20;
+    .card-text {
         position: absolute;
         bottom: 20px;
         left: 20px;
         right: 20px;
-        font-weight: 500;
-        font-size:  18px;
-        color:$color-primary;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
+        color: $color-primary;
+        z-index: 20;
+    
+        h3 {
+            margin: 5px 0;
+            font-weight: 500;
+            font-size: 18px;
+        }
 }
+}
+
 @media screen and (min-width: 481px) and (max-width: 1024px) {
     .card-link {
       max-width: 1024px;
